@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
     const [inputTitle,setInputTitle]=useState('');
     const [inputAmount,setInputAmount]=useState('');
     const [inputDate,setInputDate]=useState('');
@@ -35,6 +35,7 @@ const ExpenseForm = () => {
         setInputDate('')
         setInputTitle('')
         console.log(json)
+        props.setExpenseHanlder(json);
     }
   return (
 

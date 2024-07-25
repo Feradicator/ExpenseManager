@@ -1,11 +1,14 @@
 import React from 'react'
 
-const Expense = () => {
+const Expense = (object) => {
+  console.log('in Expense')
+  console.log(object.object1.title)
+  
   return (
     <div>
-        <p>Title</p>
-        <p>Amount</p>
-        <p>Date</p>
+        <p>{object.object1.title}</p>
+        <p>{object.object1.amount}</p>
+        <p>{object.object1.date}</p>
       
     </div>
   )

@@ -2,14 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import ExpenseForm from './components/ExpenseForm';
 import Expense from './components/Expense';
+import ExpensePage from './components/ExpensePage';
 
 function App() {
   return (
     <div className="App">
      <div>
       Expense Manager
-      <ExpenseForm/>
-      <Expense/>
+      <ExpensePage/>
      </div>
     </div>
   );
